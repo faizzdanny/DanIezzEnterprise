@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>DanIezz's Enterprise</title>
+</head>
+<body>
+    <nav class="section__container nav__container">
+        <a href="#" class="nav__logo">
+            <img src="DanIezz_s_Enterprise-removebg-preview.png" alt="Logo" class="nav__logo-img" />DanIezz's Enterprise
+        </a>
+        <div class="nav__menu">
+            <ul class="nav__links">
+                <li class="link"><a href="index.html">HOME</a></li>
+                <li class="link"><a href="Product.html">PRODUCT</a></li>
+                <li class="link"><a href="Payment.html">PAYMENT</a></li>
+            </ul>
+            <div class="nav__icons">
+                <span><i class="ri-shopping-bag-2-line" onclick="toggleCart()"></i></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section__container sale__container">
+        <h2 class="section__title">Soft Cookies</h2>
+        <div class="sale__slider">
+            <div class="sale__card">
+                <img src="choc.jpeg" alt="Soft Cookies Chocolate Chips" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Soft Cookies Chocolate Chips</p>
+                    <h4 class="sale__title">RM 4.00</h4>
+                    <p class="sale__subtitle">-1 Pcs-</p>
+                    <button data-stock="10" onclick="addToCart('Soft Cookies Chocolate Chips', 4.00, this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="sale__card">
+                <img src="re.jpeg" alt="Soft Cookies Red Velvet" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Soft Cookies Red Velvet</p>
+                    <h4 class="sale__title">RM 4.00</h4>
+                    <p class="sale__subtitle">-1 Pcs-</p>
+                    <button data-stock="10" onclick="addToCart('Soft Cookies Red Velvet', 4.00, this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="sale__card">
+                <img src="matcha.jpeg" alt="Soft Cookies Matcha" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Soft Cookies Matcha</p>
+                    <h4 class="sale__title">RM 4.00</h4>
+                    <p class="sale__subtitle">-1 Pcs-</p>
+                    <button data-stock="10" onclick="addToCart('Soft Cookies Matcha', 4.00, this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="sale__card">
+                <img src="matcha.jpeg" alt="Soft Cookies Dark Chocolate" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Soft Cookies Dark Chocolate</p>
+                    <h4 class="sale__title">RM 4.00</h4>
+                    <p class="sale__subtitle">-1 Pcs-</p>
+                    <button data-stock="10" onclick="addToCart('Soft Cookies Dark Chocolate', 4.00, this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="sale__card">
+                <img src="matcha.jpeg" alt="Soft Cookies Coffee" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Soft Cookies Coffee</p>
+                    <h4 class="sale__title">RM 4.00</h4>
+                    <p class="sale__subtitle">-1 Pcs-</p>
+                    <button data-stock="10" onclick="addToCart('Soft Cookies Coffee', 4.00, this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container sale__container">
+        <h2 class="section__title">Coffee (SOLD OUT)</h2>
+        <div class="sale__slider">
+            <div class="sale__card">
+                <img src="Sign.jpeg" alt="Signature Blend Frenché Roast Coffee" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Signature Blend Frenché Roast Coffee</p>
+                    <h4 class="sale__title">RM 16.50</h4>
+                    <p class="sale__subtitle">- One pack 25 Stick-</p>
+                    <button data-stock="0" onclick="addToCart('Signature Blend Frenché Roast Coffee', 16.50, this)">SOLD OUT</button>
+                </div>
+            </div>
+            <div class="sale__card">
+                <img src="Salted.jpg" alt="Salted Caramel Frenché Roast Coffee" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Salted Caramel Frenché Roast Coffee</p>
+                    <h4 class="sale__title">RM 16.50</h4>
+                    <p class="sale__subtitle">- One pack 18 Stick -</p>
+                    <button data-stock="0" onclick="addToCart('Salted Caramel Frenché Roast Coffee', 16.50, this)">SOLD OUT</button>
+                </div>
+            </div>
+            <div class="sale__card">
+                <img src="tiramisu.jpg" alt="Tiramisu Latte Frenché Roast Coffee" />
+                <div class="sale__content">
+                    <p class="sale__subtitle">Tiramisu Latte Frenché Roast Coffee</p>
+                    <h4 class="sale__title">RM 16.50</h4>
+                    <p class="sale__subtitle">- One pack 18 Stick-</p>
+                    <button data-stock="0" onclick="addToCart('Tiramisu Latte Frenché Roast Coffee', 16.50, this)">SOLD OUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customer-photos" class="section__container customer__photos">
+        <h2 class="section__title">Gambar Bersama Pelanggan</h2>
+        <div class="photos__slider">
+            <div class="photo__item">
+                <img src="cust2 edit.jpg" alt="Customer Photo 1" />
+            </div>
+            <div class="photo__item">
+                <img src="Cust 3.jpg" alt="Customer Photo 2" />
+            </div>
+            <div class="photo__item">
+                <img src="WhatsApp Image 2024-08-05 at 17.40.56_4be0e2ac.jpg" alt="Customer Photo 3" />
+            </div>
+            <div class="photo__item">
+                <img src="Cust5.jpg" alt="Customer Photo 4" />
+            </div>
+            <div class="photo__item">
+                <img src="Cust 5.jpg" alt="Customer Photo 5" />
+            </div>
+            <div class="photo__item">
+                <img src="Cust 6.jpg" alt="Customer Photo 5" />
+            </div>
+            <div class="photo__item">
+                <img src="Cust 7.jpg" alt="Customer Photo 5" />
+            </div>
+            <div class="photo__item">
+                <img src="Cust 8.jpg" alt="Customer Photo 5" />
+            </div>
+        </div>
+    </section>
+
+    <div id="cart" class="cart">
+        <h2>Your Calculator</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: RM <span id="cart-total">0.00</span></h3>
+        <img src="qrcode.jpg" alt="Bank QR Code" class="qr-code"/>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="clearCart()">Clear Cart</button>
+        <div class="payment-guide">
+            <h3>How to Pay</h3>
+            <ol>
+                <li>Scan the QR code above using your bank's mobile app.</li>
+                <li>Enter the total amount: RM <span id="guide-total">0.00</span></li>
+                <li>Complete the payment.</li>
+                <li>Take a screenshot of the payment receipt.</li>
+                <li>Submit the receipt through the checkout button and it will directed to Google Form. Submit the receipt there thank you</a>.</li>
+            </ol>
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Contact me if you having difficulty to make a payment through my website</p>
+        <div class="social-icons">
+            <a href="https://wa.me/60177447610" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer class="section__container footer__bar">
+        <div class="copyright">
+            © 2024 DanIezz's Enterprise. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
